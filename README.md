@@ -4,6 +4,7 @@ ml-projects
 Machine Learning projects using traditional algorithms.
 * [Naive Bayes Mini Project](#naive-bayes-mini-project)
 * [Support Vector Machines Mini Project](#support-vector-machines-mini-project)
+* [Iris Flower Data Set](#iris-flower-data-set)
 
 ## Naive Bayes Mini Project
 
@@ -20,3 +21,9 @@ One particular feature of Naive Bayes is that it’s a good algorithm for workin
 In this mini-project, I tackle the exact same email author ID problem as the Naive Bayes mini-project, but now with an SVM. I clarify some of the practical differences between the two algorithms. I've also tuned parameters a lot more than in Naive Bayes. I compared the training and prediction times to Naive Bayes.
 
 I concluded that Naive Bayes is great for text -- it’s faster and generally gives better performance than an SVM for this particular problem. Of course, there are plenty of other problems where an SVM might work better. Knowing which one to try when you’re tackling a problem for the first time is part of the art and science of machine learning. In addition to picking your algorithm, depending on which one you try, there are parameter tunes to worry about as well, and the possibility of overfitting (especially if you don’t have lots of training data).
+
+## Iris Flower Data Set
+
+[Iris](https://en.wikipedia.org/wiki/Iris_flower_data_set) is a classic machine learning problem. In it, you want to identify what type of flower you have, based on different measurements like the length and width of the petal. The dataset includes three different types of flowers. They're all species of Iris - Setosa, Versicolor, and Virginica. We're given 50 examples of each type, so 150 examples in total. There are four features that are used to describe each example. These are the length and width of the sepal and petal.
+
+I separated some testing data from the dataset and used the rest of the training data to train a Decision Tree classifier and predict values of the testing data. I also visualised a block diagram representation of the decision tree in pdf format. I concluded that every question the decision tree asks must be about one of your features. That means the better your features are, the better a tree you can build.
