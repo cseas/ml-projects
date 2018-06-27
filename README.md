@@ -2,6 +2,8 @@ ml-projects
 ==============
 
 Machine Learning projects using traditional algorithms.
+* [Naive Bayes Mini Project](#naive-bayes-mini-project)
+* [Support Vector Machines Mini Project](#support-vector-machines-mini-project)
 
 ## Naive Bayes Mini Project
 
