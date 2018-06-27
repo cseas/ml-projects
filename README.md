@@ -12,3 +12,9 @@ I've done something very similar in this project. We have a set of emails, half 
 I start by getting a list of strings. Each string is the text of an email, which has undergone some basic preprocessing; I then use the code to split the dataset into training and testing sets.
 
 One particular feature of Naive Bayes is that it’s a good algorithm for working with text classification. When dealing with text, it’s very common to treat each unique word as a feature, and since the typical person’s vocabulary is many thousands of words, this makes for a large number of features. The relative simplicity of the algorithm and the independent features assumption of Naive Bayes make it a strong performer for classifying texts. In this mini-project, I downloaded and installed sklearn on my computer and used Naive Bayes to classify emails by author.
+
+## Support Vector Machines Mini Project
+
+In this mini-project, I tackle the exact same email author ID problem as the Naive Bayes mini-project, but now with an SVM. I clarify some of the practical differences between the two algorithms. I've also tuned parameters a lot more than in Naive Bayes. I compared the training and prediction times to Naive Bayes.
+
+I concluded that Naive Bayes is great for text -- it’s faster and generally gives better performance than an SVM for this particular problem. Of course, there are plenty of other problems where an SVM might work better. Knowing which one to try when you’re tackling a problem for the first time is part of the art and science of machine learning. In addition to picking your algorithm, depending on which one you try, there are parameter tunes to worry about as well, and the possibility of overfitting (especially if you don’t have lots of training data).
