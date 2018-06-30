@@ -4,7 +4,7 @@ ml-projects
 Machine Learning projects using traditional algorithms.
 * [Naive Bayes Mini Project](#naive-bayes-mini-project)
 * [Support Vector Machines Mini Project](#support-vector-machines-mini-project)
-* [Custom K Nearest Neighbors CLassifier](#custom-k-nearest-neighbors-classifier)
+* [Custom K Nearest Neighbors Classifier](#custom-k-nearest-neighbors-classifier)
 * [Iris Flower Data Set](#iris-flower-data-set)
 
 ## Naive Bayes Mini Project
@@ -15,7 +15,7 @@ I've done something very similar in this project. We have a set of emails, half 
 
 I start by getting a list of strings. Each string is the text of an email, which has undergone some basic preprocessing; I then use the code to split the dataset into training and testing sets.
 
-One particular feature of Naive Bayes is that it’s a good algorithm for working with text classification. When dealing with text, it’s very common to treat each unique word as a feature, and since the typical person’s vocabulary is many thousands of words, this makes for a large number of features. The relative simplicity of the algorithm and the independent features assumption of Naive Bayes make it a strong performer for classifying texts. In this mini-project, I downloaded and installed sklearn on my computer and used Naive Bayes to classify emails by author.
+One particular feature of Naive Bayes is that it’s a good algorithm for working with text classification. When dealing with text, it’s very common to treat each unique word as a feature, and since the typical person’s vocabulary is many thousands of words, this makes for a large number of features. The relative simplicity of the algorithm and the independent features assumption of Naive Bayes make it a strong performer for classifying texts. In this mini-project, I used Naive Bayes classifier from scikit-learn to classify emails by author.
 
 ## Support Vector Machines Mini Project
 
