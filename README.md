@@ -4,6 +4,7 @@ ml-projects
 Machine Learning projects using traditional algorithms.
 * [Naive Bayes Mini Project](#naive-bayes-mini-project)
 * [Support Vector Machines Mini Project](#support-vector-machines-mini-project)
+* [Custom K Nearest Neighbors CLassifier](#custom-k-nearest-neighbors-classifier)
 * [Iris Flower Data Set](#iris-flower-data-set)
 
 ## Naive Bayes Mini Project
@@ -22,7 +23,7 @@ In this mini-project, I tackle the exact same email author ID problem as the Nai
 
 I concluded that Naive Bayes is great for text -- it’s faster and generally gives better performance than an SVM for this particular problem. Of course, there are plenty of other problems where an SVM might work better. Knowing which one to try when you’re tackling a problem for the first time is part of the art and science of machine learning. In addition to picking your algorithm, depending on which one you try, there are parameter tunes to worry about as well, and the possibility of overfitting (especially if you don’t have lots of training data).
 
-## Custom K Nearest Neighbors CLassifier
+## Custom K Nearest Neighbors Classifier
 
 In this project, I wrote a simple implementation of the K Nearest Neighbors classifier, one of the simplest classifiers around. I've written my own version of the "fit" and "predict" functions for the KNeighborsClassifier class, replacing it by implementing a custom class, keeping the rest of the pipeline the same as scikit-learn. I implemented the KNN classifier with K as 1 and by finding the euclidian distances of the nearest points for predictions.
 
