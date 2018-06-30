@@ -23,7 +23,10 @@ In this mini-project, I tackle the exact same email author ID problem as the Nai
 I concluded that Naive Bayes is great for text -- it’s faster and generally gives better performance than an SVM for this particular problem. Of course, there are plenty of other problems where an SVM might work better. Knowing which one to try when you’re tackling a problem for the first time is part of the art and science of machine learning. In addition to picking your algorithm, depending on which one you try, there are parameter tunes to worry about as well, and the possibility of overfitting (especially if you don’t have lots of training data).
 
 ## Custom K Nearest Neighbors CLassifier
-In this project, I wrote a simple implementation of the K Nearest Neighbors classifier, one of the simplest classifiers around. I've written my own version of the "fit" and "predict" functions for the KNeighborsClassifier class, replacing it by implementing a custom class, keeping the rest of the pipeline the same as scikit-learn.
+
+In this project, I wrote a simple implementation of the K Nearest Neighbors classifier, one of the simplest classifiers around. I've written my own version of the "fit" and "predict" functions for the KNeighborsClassifier class, replacing it by implementing a custom class, keeping the rest of the pipeline the same as scikit-learn. I implemented the KNN classifier with K as 1 and by finding the euclidian distances of the nearest points for predictions.
+
+The pros of this method are that it is relatively easy to understand and works reasonably well for some problems. The basic con is that it is computationally intensive. It has to iterate over every training point to make a prediction. Also, it is hard to represent relationships between features in K Nearest Neighbors. A decision tree might be a better choice if we want the algorithm to understand the complex relationships between features and the label we're trying to predict. A neural network might be even better.
 
 ## Iris Flower Data Set
 
