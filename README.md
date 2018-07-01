@@ -27,7 +27,7 @@ I concluded that Naive Bayes is great for text -- it’s faster and generally gi
 
 In this project, I wrote a simple implementation of the K Nearest Neighbors classifier, one of the simplest classifiers around. I've written my own version of the "fit" and "predict" functions for the KNeighborsClassifier class, replacing it by implementing a custom class, keeping the rest of the pipeline the same as scikit-learn. I implemented the KNN classifier with K as 1 and by finding the euclidian distances of the nearest points for predictions.
 
-The pros of this method are that it is relatively easy to understand and works reasonably well for some problems. The basic con is that it is computationally intensive. It has to iterate over every training point to make a prediction. Also, it is hard to represent relationships between features in K Nearest Neighbors. A decision tree might be a better choice if we want the algorithm to understand the complex relationships between features and the label we're trying to predict. A neural network might be even better.
+The pros of this method are that it is relatively easy to understand and works reasonably well for some problems. The basic con is that it is computationally intensive. It has to iterate over every training point to make a prediction. Also, it is hard to represent relationships between features in K Nearest Neighbors. A decision tree might be a better choice if we want the algorithm to understand the complex relationships between features and the label we're trying to predict. A neural network might be even better. However, if your features are linearly separable, then there's no need to use a neural network, although, it will still do the job.
 
 ## Iris Flower Data Set
 
