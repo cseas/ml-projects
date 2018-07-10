@@ -5,6 +5,7 @@ Machine Learning projects using traditional algorithms.
 - [Naive Bayes Mini Project](#naive-bayes-mini-project)
 - [Support Vector Machines Mini Project](#support-vector-machines-mini-project)
 - [Custom K Nearest Neighbors Classifier](#custom-k-nearest-neighbors-classifier)
+- [Deep Neural Network Classifier](#deep-neural-network-classifier)
 - [Iris Flower Data Set](#iris-flower-data-set)
 
 ## Naive Bayes Mini Project
@@ -34,6 +35,12 @@ I concluded that Naive Bayes is great for text -- it’s faster and generally gi
 In this project, I wrote a simple implementation of the K Nearest Neighbors classifier, one of the simplest classifiers around. I've written my own version of the "fit" and "predict" functions for the KNeighborsClassifier class, replacing it by implementing a custom class, keeping the rest of the pipeline the same as scikit-learn. I implemented the KNN classifier with K as 1 and by finding the euclidian distances of the nearest points for predictions.
 
 The pros of this method are that it is relatively easy to understand and works reasonably well for some problems. The basic con is that it is computationally intensive. It has to iterate over every training point to make a prediction. Also, it is hard to represent relationships between features in K Nearest Neighbors. A decision tree might be a better choice if we want the algorithm to understand the complex relationships between features and the label we're trying to predict. A neural network might be even better. However, if your features are linearly separable, then there's no need to use a neural network, although, it will still do the job.
+
+## Deep Neural Network Classifier
+
+[Code](https://github.com/cseas/ml-projects/tree/master/dnn)
+
+In this project, I've solved the Iris dataset using a Deep Neural Network Classifier in TensorFlow. Achieved a similar accuracy as with my earlier implementation of a [Custom K Nearest Neighbors Classifier](https://github.com/cseas/ml-projects/tree/master/custom_knn) with a relatively higher training time. I concluded that a neural network, although solved the problem, may not always be needed for problems of small scale.
 
 ## Iris Flower Data Set
 

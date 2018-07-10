@@ -29,9 +29,15 @@ test_data = iris.data[test_idx]
 clf = tree.DecisionTreeClassifier()
 clf.fit(train_data, train_target)
 
+# predictions
+predictions = clf.predict(test_data)
+
 # 0 = setosa, 1 = versicolor, 2 = virginica
 print("\nActual values", test_target)
-print("Predicted values", clf.predict(test_data))
+print("Predicted values", predictions)
+
+from sklearn.metrics import accuracy_score
+print("Accuracy", accuracy_score(test_target, predictions))
 
 # visualise the decision tree
 import graphviz
