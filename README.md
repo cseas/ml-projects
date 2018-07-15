@@ -49,3 +49,13 @@ In this project, I've solved the Iris dataset using a Deep Neural Network Classi
 [Iris](https://en.wikipedia.org/wiki/Iris_flower_data_set) is a classic machine learning problem. In it, you want to identify what type of flower you have, based on different measurements like the length and width of the petal. The dataset includes three different types of flowers. They're all species of Iris - Setosa, Versicolor, and Virginica. We're given 50 examples of each type, so 150 examples in total. There are four features that are used to describe each example. These are the length and width of the sepal and petal.
 
 I separated some testing data from the dataset and used the rest of the training data to train a Decision Tree classifier and predict values of the testing data. I also visualised a block diagram representation of the decision tree in pdf format. I concluded that every question the decision tree asks must be about one of your features. That means the better your features are, the better a tree you can build.
+
+## MNIST Data Set
+
+[Code](https://github.com/cseas/ml-projects/tree/master/mnist)
+
+In this project, I've written an image classifier using TensorFlow. The problem is to classify handwritten digits from the MNIST Data Set. Writing a simple classifier for these is often considered the Hello World of Computer Vision.
+
+MNIST is a multi-class classification problem. Given an image of a digit, our job is to predict which one it is.
+
+I've used `matplotlib` to display images and `tensorflow` to train the classifier.
