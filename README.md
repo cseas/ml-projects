@@ -7,6 +7,7 @@ Machine Learning projects using traditional algorithms.
 - [Custom K Nearest Neighbors Classifier](#custom-k-nearest-neighbors-classifier)
 - [Deep Neural Network Classifier](#deep-neural-network-classifier)
 - [Iris Flower Data Set](#iris-flower-data-set)
+- [MNIST Data Set](#mnist-data-set)
 
 ## Naive Bayes Mini Project
 
