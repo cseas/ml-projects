@@ -1,5 +1,6 @@
 # custom
 .vscode/
+mnist/MNIST-data/
 
 *.pyc
 enron_mail_20110402.tgz
