@@ -59,4 +59,12 @@ In this project, I've written an image classifier using TensorFlow. The problem 
 
 MNIST is a multi-class classification problem. Given an image of a digit, our job is to predict which one it is.
 
-I've used `matplotlib` to display images and `tensorflow` to train the classifier.
+I've used `matplotlib` to display images and `tensorflow` to train the classifier. The dataset contains thousands of labeled images of handwritten digits. It's pre-divided into train, which is 55,000 and test, which is 10,000.
+
+The images are low resolution, just 28x28 pixels in grayscale. Each image contains exactly one digit.
+
+When we're working with images, we use the raw pixels as features. A 28x28 image has 784 pixels, so we have 784 features. And here we're using the flattened representation of the image. To flatten an image means to convert it from a 2D array to a 1D array by unstacking the rows and lining them up.
+
+The inputs and outputs are fully connected, and each of these edges has a weight. The weights are adjusted by gradient descent.
+
+I trained and evaluated the model to get above 92% accuracy. We can easily get 99% with Deep Learning. I then visualized the wights the classifier learned, with the positive weights drawn in red, and negative weights drawn in blue.

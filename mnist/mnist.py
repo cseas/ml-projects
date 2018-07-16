@@ -28,6 +28,8 @@ test_labels = np.asarray(mnist.test.labels, dtype=np.int32)
 def display(i):
     img = test_data[i]
     plt.title('Example %d, Label %d' % (i, test_labels[i]))
+    # reshape is used to convert image from 2D array to 
+    # 1D array (flattened representation)
     plt.imshow(img.reshape((28,28)), cmap=plt.cm.gray_r)
     plt.show()
 
@@ -37,6 +39,10 @@ print("Length of one image:", len(data[0]))
 
 # Fit a linear classifier
 feature_columns = learn.infer_real_valued_columns_from_input(data)
+# n_classes = No. of classes we have
+# We have 10 classes, one for each type of digit
+# The feature_columns informs the classifier about the features 
+# we'll use.
 classifier = learn.LinearClassifier(
     feature_columns=feature_columns, 
     n_classes=10)
@@ -59,3 +65,15 @@ display(0)
 prediction = classifier.predict(np.array([test_data[8]], dtype=float), as_iterable=False)
 print("Predicted %d, Label: %d" % (prediction, test_labels[8]))
 display(8)
+
+# Visualize learned weights
+weights = classifier.get_variable_value("linear//weight")
+f, axes = plt.subplots(2, 5, figsize=(10, 4))
+axes = axes.reshape(-1)
+for i in range(len(axes)):
+    a = axes[i]
+    a.imshow(weights.T[i].reshape(28, 28), cmap=plt.cm.seismic)
+    a.set_title(i)
+    a.set_xticks(()) # ticks be gone
+    a.set_yticks(())
+plt.show()
