@@ -67,4 +67,4 @@ When we're working with images, we use the raw pixels as features. A 28x28 image
 
 The inputs and outputs are fully connected, and each of these edges has a weight. The weights are adjusted by gradient descent.
 
-I trained and evaluated the model to get above 92% accuracy. We can easily get 99% with Deep Learning. I then visualized the wights the classifier learned, with the positive weights drawn in red, and negative weights drawn in blue.
+I trained and evaluated the model to get above 92% accuracy. We can easily get 99% with Deep Learning. I then visualized the weights the classifier learned, with the positive weights drawn in red, and negative weights drawn in blue.
