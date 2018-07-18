@@ -49,6 +49,10 @@ Each row in the dataset is an example. The first two columns provide features or
 
 The dataset is written so that it's not perfectly separable. For example, there's no way to tell apart the second and fifth examples. They have the same features, but different labels. This is so we can see how our tree handles this case. The testing data is in the same format.
 
+To build the tree, we use the Decision Tree Learning algorithm called CART (Classification And Regression Trees).
+
+All nodes in the tree receive a list of rows as input. And the root will receive the entire training set. Each node will ask a true/false question about one of the features. The goal of the question is to unmix the labels as we proceed down the tree.
+
 ## Deep Neural Network Classifier
 
 [Code](https://github.com/cseas/ml-projects/tree/master/dnn)
